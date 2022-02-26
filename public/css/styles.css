@@ -1,0 +1,15 @@
+:root {
+    --amarillo:#EAC926;
+    --Azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+
+body{font-family: roboto;
+    font-size: 12px;}
+
+h3#titulares { font-size: 24px;
+    }
