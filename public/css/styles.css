@@ -8,8 +8,34 @@
 }
 
 
-body{font-family: roboto;
+body{background-color:var(--amarillo);
+    font-family: roboto;
     font-size: 12px;}
 
-h3#titulares { font-size: 24px;
+.titulares {font-size: 24px;
     }
+.precios{font-size:18px;}
+
+.dd{font-size:16px}
+
+.searchbox{border:black;
+}
+
+.lupa{color: red;
+}
+
+.button{
+    color:black;
+    font-size:12px;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    border:black;
+    border-radius:1px;
+    padding: 1px;
+
+}
+
+.CC{text-align:center;
+    font-weight: bold;
+}

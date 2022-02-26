@@ -6,61 +6,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>  
     <header>
-        <div><img src="/images/logo-mercado-liebre.svg" width="50%" height="50%" alt="logo"></div>
-        <section>Lugar para poner la barra de búsqueda</section>
-        <section>Compra en cuotas y sin tarjeta de crédito</section>
+        <div><img src="/images/logo-mercado-liebre.svg" width="50%" height="50%" alt="logo" aling="middle"></div>
+        <input type="search" name="busqueda" placeholder="Buscar productos, marcas" class="busqueda" size="23" maxlength="23">
+        <div><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
+
+        <section class="CC"><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de crédito</section>
         <nav>
-            <ul>
+            <ul type="none">
                 <li>Ofertas</li>
                 <li>Tiendas Oficiales</li>
                 <li>Vender</li>
                 <li>Ayuda</li>
             </ul>
-            <ul>
-                <li>Crer tu cuenta</li>
-                <li>Ingresa</li>
-                <li>Mis compras</li>
+            <ul type="none">
+                <li>Crer tu cuenta<i class="fa-solid fa-id-card"></i></li>
+                <li>Ingresa<i class="fa-solid fa-right-to-bracket"></i></li>
+                <li>Mis compras<i class="fa-solid fa-basket-shopping"></i></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h3 id="titulares">Basado en tu útima compra</h3>
+            <h3 class="titulares">Basado en tu útima compra</h3>
+
             <article><img src="/images/img-cafetera-moulinex.jpg" width="20%" height="20%" alt="Cafetera">
-                <p>$6.770<br>40% OFF<br>Cafetera Moulinex</p>
-            </article>
-            <article><img src="/images/img-macbook-pro-2019.jpg" width="20%" height="20%" alt="Macbook">
-                <p>$230.000<br>20% OFF<br>MacBook Pro 2019</p>
-            </article>
-            <article><img src="/images/img-samsung-galaxy-s10.jpg" width="20%" height="20%" alt="Cafetera">
-                <p>$70.500<br>10% OFF<br>Samsung Galaxy S10</p>
-            </article>
-            <article><img src="/images/img-tv-samsung-smart.jpg" width="20%" height="20%" alt="Cafetera">
-                <p>$23.200<br>5% OFF<br>SmartTv Samsung 43"</p>
+            <ul type="none">
+                <li class="precios" >$6.770</li>
+                <li class="dd">40 OFF</li>
+                <li class="dd">Cafetera Moulinex</li>
+            </ul>
             </article>
 
-        </section><h3 id="titulares">Ofertas</h3>
-        <article><img src="/images/img-cafetera-moulinex.jpg" width="20%" height="20%" alt="Cafetera">
-            <p>$6.770<br>40% OFF<br>Cafetera Moulinex</p>
-        </article>
-        <article><img src="/images/img-macbook-pro-2019.jpg" width="20%" height="20%" alt="Macbook">
-            <p>$230.000<br>20% OFF<br>MacBook Pro 2019</p>
-        </article>
-        <article><img src="/images/img-samsung-galaxy-s10.jpg" width="20%" height="20%" alt="Cafetera">
-            <p>$70.500<br>10% OFF<br>Samsung Galaxy S10</p>
-        </article>
-        <article><img src="/images/img-tv-samsung-smart.jpg" width="20%" height="20%" alt="Cafetera">
-            <p>$23.200<br>5% OFF<br>SmartTv Samsung 43"</p>
-        </article>
+            <article><img src="/images/img-macbook-pro-2019.jpg" width="20%" height="20%" alt="Macbook">
+            <ul type="none"> 
+                <li class="precios">$230.000</li>
+                <li class="dd">20% OFF</li>
+                <li class="dd">MacBook Pro 2019</li>
+            </article>
+
+            <article><img src="/images/img-samsung-galaxy-s10.jpg" width="20%" height="20%" alt="Cafetera">
+            <ul type="none">
+                <li class="precios">$70.500</li>
+                <li class="dd">10% OFF</li>
+                <li class="dd">Samsung Galaxy S10</li>
+            </ul>
+            </article>
+
+            <article><img src="/images/img-tv-samsung-smart.jpg" width="20%" height="20%" alt="Cafetera">
+            <ul type="none">
+                <li class="precios">$23.200</li>
+                <li class="dd">5% OFF</li>
+                <li class="dd">SmartTv Samsung 43"</li>
+            </ul>
+            </article>
+
         </section>
+        
+        <section>
+            <h3 class="titulares">Ofertas</h3>
+
+            <article><img src="/images/img-cafetera-moulinex.jpg" width="20%" height="20%" alt="Cafetera">
+            <ul type="none">
+              <li class="precios">$6.770</li>
+              <li class="dd">40% OFF</li>
+              <li class="dd">Cafetera Moulinex</li>
+            </ul>
+           </article>
+
+           <article><img src="/images/img-macbook-pro-2019.jpg" width="20%" height="20%" alt="Macbook">
+            <ul type="none">
+              <li class="precios">$230.000</li>
+              <li class="dd">20% OFF</li>
+              <li class="dd">MacBook Pro 2019</li>
+            </ul>
+           </article>
+
+           <article><img src="/images/img-samsung-galaxy-s10.jpg" width="20%" height="20%" alt="Cafetera">
+            <ul type="none">
+             <li class="precios">$70.500</li>
+             <li class="dd">10% OFF</li>
+             <li class="dd">Samsung Galaxy S10</li>
+            </ul>
+           </article>
+
+           <article><img src="/images/img-tv-samsung-smart.jpg" width="20%" height="20%" alt="Cafetera">
+            <ul type="none">
+             <li class="precios">$23.200</li>
+             <li class="dd">5% OFF</li>
+             <li class="dd">SmartTv Samsung 43"</li>
+            </ul>
+           </article>
+
+        </section>
+
     </main>
 
     <footer>
