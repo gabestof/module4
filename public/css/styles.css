@@ -13,6 +13,7 @@ body{background-color:var(--amarillo);
     font-size: 12px;}
 
 .titulares {font-size: 24px;
+    text-align: center;
     }
 .precios{font-size:18px;}
 
@@ -39,3 +40,25 @@ body{background-color:var(--amarillo);
 .CC{text-align:center;
     font-weight: bold;
 }
+
+.productos{text-align: center;
+    margin-bottom: 10%;
+}
+
+.hamburger{text-align: center;
+    color: white;
+    text-decoration:none; 
+    padding: 2px 5px;
+    margin-left: 50%;
+    border-bottom: 1px solid var(--Azul);
+    max-width: 10px;
+    background: var(--Azul);
+    font-variant:small-caps;
+    text-shadow: 1px 1px black;
+}
+
+.icons1{margin-left: 1%;
+    margin-top: 1%;
+}
+
+.list1{margin-left:1%;}
