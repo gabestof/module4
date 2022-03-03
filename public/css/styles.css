@@ -1,3 +1,5 @@
+* {box-sizing: border-box;}
+
 :root {
     --amarillo:#EAC926;
     --Azul: #03264C;
@@ -12,53 +14,70 @@ body{background-color:var(--amarillo);
     font-family: roboto;
     font-size: 12px;}
 
+main{width:90vw;
+background-color: white;}
+
 .titulares {font-size: 24px;
     text-align: center;
     }
-.precios{font-size:18px;}
+.precios{font-size:18px;
+width: 8%;}
 
-.dd{font-size:16px}
+.desc-desc{font-size: 16px;
+width: 40%;}    
 
-.searchbox{border:black;
+.search-box{
+    border: solid 1px var(--gris-oscuro);
+    margin-left: 1%;
+    margin-bottom: .5vw;
 }
 
-.lupa{color: red;
+.lupa{
+    background-color: var(--gris-claro);
+margin-left: 1%;
+border: solid 1px var(--gris-oscuro)}
+
+.cuotas{text-align: center;}
+
+
+.hamburger{margin-left: 50%;
+    background-color: var(--celeste);
+    padding: 5px 10px;
+    color:white;
+    font-size: 24px;
+   border-radius: 10%;
 }
 
-.button{
-    color:black;
-    font-size:12px;
-    font-weight: bold;
-    width: auto;
-    height: auto;
-    border:black;
-    border-radius:1px;
-    padding: 1px;
 
+.footer-text{width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;}
+
+
+.footer-icons{margin: auto;
+margin-bottom: 10px;
+width: 2em;
+text-align: center;
+font-size: 2em;
+color:var(--celeste)}
+
+.articles{margin: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    border:solid 1px var(--gris-claro);
+    padding: 15px;
 }
 
-.CC{text-align:center;
-    font-weight: bold;
-}
 
-.productos{text-align: center;
-    margin-bottom: 10%;
-}
 
-.hamburger{text-align: center;
-    color: white;
-    text-decoration:none; 
-    padding: 2px 5px;
-    margin-left: 50%;
-    border-bottom: 1px solid var(--Azul);
-    max-width: 10px;
-    background: var(--Azul);
-    font-variant:small-caps;
-    text-shadow: 1px 1px black;
-}
+.products{width: 30vw}
 
-.icons1{margin-left: 1%;
-    margin-top: 1%;
-}
+.truck{border:solid 1px var(--verde);
+    padding: 2px 12px 15px 7px;
+    border-radius: 50%;
+    color: var(--verde);
+    width:8%;
 
-.list1{margin-left:1%;}
+}
