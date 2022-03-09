@@ -1,4 +1,7 @@
-* {box-sizing: border-box;}
+* {box-sizing: border-box;
+    margin: 0px;
+ padding: 0px;
+}
 
 :root {
     --amarillo:#EAC926;
@@ -15,16 +18,24 @@ body{background-color:var(--amarillo);
     font-size: 12px;}
 
 main{width:90vw;
-background-color: white;}
+background-color: var(--gris-claro);
+margin:auto;}
 
-.titulares {font-size: 24px;
-    text-align: center;
+.titulares {margin-left: 5%;
+    font-size: 24px;
     }
+
+  
 .precios{font-size:18px;
-width: 8%;}
+flex-grow: .30;}
 
 .desc-desc{font-size: 16px;
-width: 40%;}    
+    color:var(--verde);
+flex-grow: .70;}   
+
+.desc-desc2{font-size: 16px;}
+
+.description{font-size: 16px;}
 
 .search-box{
     border: solid 1px var(--gris-oscuro);
@@ -37,8 +48,10 @@ width: 40%;}
 margin-left: 1%;
 border: solid 1px var(--gris-oscuro)}
 
+
 .cuotas{text-align: center;}
 
+.nav1{margin-left: 2%}
 
 .hamburger{margin-left: 50%;
     background-color: var(--celeste);
@@ -47,6 +60,9 @@ border: solid 1px var(--gris-oscuro)}
     font-size: 24px;
    border-radius: 10%;
 }
+
+.banner{margin: auto;
+    width:100%;}
 
 
 .footer-text{width: 50%;
@@ -64,20 +80,46 @@ color:var(--celeste)}
 
 .articles{margin: auto;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-bottom: 10px;
     text-align: center;
     border:solid 1px var(--gris-claro);
     padding: 15px;
+    background-color: white;
+    width:90%;
 }
 
 
 
-.products{width: 30vw}
+.products{width: 100%}
 
-.truck{border:solid 1px var(--verde);
-    padding: 2px 12px 15px 7px;
+.truck{display:block;
+    border:solid 1px var(--verde);
+    background-color: #fff;
     border-radius: 50%;
     color: var(--verde);
-    width:8%;
-
+    font-size: 16px;
+    padding: 5px;
+    right:20px;
+    top:-15px;
 }
+
+
+.articles2{
+    text-align: left;
+}
+
+.price-offer{display:flex}
+
+@media (max-width:480px){
+    .description{display:none}
+    .navegacion{display:none}
+    .nav1{display:none}
+}
+
+
+@media(min-width:481px) {
+    .articles{ box-shadow: 0px 0px 10px rgb(100, 100, 100);       
+    }
+    .hamburger{display:none}
+    }
+    
