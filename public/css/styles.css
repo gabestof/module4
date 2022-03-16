@@ -18,7 +18,8 @@ body{font-family: roboto;
 
 header{background-color: var(--amarillo);}   
 
-.header1{padding: 15px 0px;}
+.header1{padding: 15px 0px;
+border:solid 1px black;}
 
 
 .logo{width: 200px;}
@@ -55,9 +56,9 @@ margin-left: 1%;
 border: solid 1px var(--gris-oscuro)}
 
 
-.cuotas{text-align: center;}
+.cuotas{text-align: center}
 
-.nav1 {border: solid 1px red}
+.nav1 {border: none}
 .nav1 ul{list-style: none;
 margin: 0;
 padding: o;}
@@ -111,21 +112,23 @@ color:var(--celeste)}
 
 .truck{display:block;
     border:solid 1px var(--verde);
+    position:absolute;
     background-color: #fff;
     border-radius: 50%;
     color: var(--verde);
     font-size: 16px;
     padding: 5px;
     right:20px;
-    top:-15px;
+    bottom: 42px;
 }
 
 
 .articles2{
     text-align: left;
+    position: relative
 }
 
-.price-offer{display:flex}
+.price-offer{display:flex;}
 
 @media (max-width:480px){
     .description{display:none}
@@ -152,3 +155,23 @@ color:var(--celeste)}
     max-width: 150px;
     padding:0 10px 0 0}
     }
+
+    @media (min-width: 1200px){
+        .header1, .nav1 {
+            max-width: 1200px;
+            margin:auto;
+        }
+        .cuotas {
+            font-size: 19px;
+            max-width: none;}
+        .header1{align-items: center;}
+
+        .logo{width:300px}
+
+        .nav1{margin-top:20px;
+            margin-bottom: 20px;
+            margin-right:10px;
+            margin-left:10px;
+        font-size:19px}
+    }
+    
