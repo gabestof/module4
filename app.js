@@ -7,7 +7,7 @@ const port = process.env.PORT ||3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(port, () => console.log("Servidor corriendo"));
+app.listen(PORT, () => console.log("Servidor corriendo"));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname,'/views/home.html'))
